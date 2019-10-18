@@ -83,12 +83,13 @@ p {
 
 .map-container {
   width: 50%;
+  text-align: center;
 }
 
 .map {
   border: 5px double white;
   border-radius: 20%;
-  margin: 5%;
+  margin: 0 5% 0 5%;
   height: 250px;
   text-align: center;
 }

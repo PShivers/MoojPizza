@@ -8,9 +8,12 @@ class ContactInfo extends Component {
             className='footer'
         >
             <div className='map-container'>
+                <p>
                 WE DELIVER! 
-                Tuesday thru Friday starting at 4:00 PM
-                Saturday & Sunday at 12 noon
+                </p>
+                <p>Tuesday thru Friday starting at 4:00 PM</p>
+                <p>Saturday & Sunday at 12 noon</p>
+                
                 <div className='map'>
                 map
                 </div>
