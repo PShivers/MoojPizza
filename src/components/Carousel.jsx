@@ -9,19 +9,19 @@ import {
 
 const items = [
   {
-    src: 'https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_768,h_300,f_auto,q_auto,dpr_auto,g_auto,c_fill/gecaqcogowq3xbyr7ciq',
+    src: 'https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
     altText: 'Slide 1',
-    caption: 'Slide 1'
+    caption: 'Hurricane'
   },
   {
-    src: 'https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_768,h_300,f_auto,q_auto,dpr_auto,g_auto,c_fill/z9fnn0hohzwbtecwu19f',
+    src: 'https://images.unsplash.com/photo-1564929360162-73cd686db4a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2793&q=80',
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    caption: 'Greek Salad'
   },
   {
-    src: 'https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_768,h_300,f_auto,q_auto,dpr_auto,g_auto,c_fill/ork1u6hrfwnxemeu2ywo',
+    src: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
     altText: 'Slide 3',
-    caption: 'Slide 3'
+    caption: 'Italian Sub'
   }
 ];
 
@@ -54,13 +54,14 @@ const Example = (props) => {
         key={item.src}
       >
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <CarouselCaption captionHeader={item.caption} />
       </CarouselItem>
     );
   });
 
   return (
     <Carousel
+      className='carousel'
       activeIndex={activeIndex}
       next={next}
       previous={previous}
