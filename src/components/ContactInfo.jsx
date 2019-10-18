@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MapMap from "./MapMap"
 
 class ContactInfo extends Component {
     state = {  }
@@ -14,9 +15,8 @@ class ContactInfo extends Component {
                 <p>Tuesday thru Friday starting at 4:00 PM</p>
                 <p>Saturday & Sunday at 12 noon</p>
                 
-                <div className='map'>
-                map
-                </div>
+                <MapMap className='map'/>
+                
             </div>
             
 

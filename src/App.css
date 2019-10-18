@@ -79,6 +79,7 @@ p {
   color: white;
   border-top: 5px solid black;
   height: 350px;
+  padding: 0 5% 0;
 }
 
 .map-container {
@@ -87,11 +88,7 @@ p {
 }
 
 .map {
-  border: 5px double white;
-  border-radius: 20%;
-  margin: 0 5% 0 5%;
-  height: 250px;
-  text-align: center;
+  width: 50%;
 }
 
 .contact-info {
