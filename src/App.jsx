@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import Header from "./components/Header.jsx";
-import Banner from './components/Banner.jsx';
-import BannerBreaker from './components/BannerBreaker.jsx';
-import BannerTwo from './components/BannerTwo.jsx';
-import Carousel from './components/Carousel.jsx';
-import ContactInfo from './components/ContactInfo.jsx'
+import Home from './components/Home.jsx'
+import Menu from './components/Menu.jsx'
 import 'bootstrap/dist/css/bootstrap.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 import './App.css';
 
@@ -13,18 +15,20 @@ class App extends Component {
   state = {  }
   render() { 
     return (
-      <div>
-        <div className="about">
-        <Header />
-        <Banner />
-        <BannerBreaker />
-        <BannerTwo />
-        <Carousel />
-        <ContactInfo />
+      <Router>
+        <Switch>
 
-          
-        </div>
-      </div> );
+          <Route path="/">
+            <Home />
+          </Route>
+
+          <Route path="/menu">
+            <Menu />
+          </Route>
+
+        </Switch>
+      </Router>
+    );
   }
 }
  
