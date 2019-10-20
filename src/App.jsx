@@ -6,7 +6,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 import './App.css';
@@ -18,7 +17,7 @@ class App extends Component {
       <Router>
         <Switch>
 
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
 

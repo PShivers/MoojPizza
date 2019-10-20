@@ -5,6 +5,9 @@ import BannerBreaker from './BannerBreaker.jsx';
 import BannerTwo from './BannerTwo.jsx';
 import Carousel from './Carousel.jsx';
 import LocationAndHours from './LocationAndHours.jsx'
+import {
+  Link
+} from "react-router-dom";
 
 
 class Home extends Component {

@@ -5,9 +5,11 @@ class LocationAndHours extends Component {
     state = {  }
     render() { 
         return ( 
-            <div>
+            <div id='location-and-hours'
+>
                 <div className="location-and-hours-title">Location & Hours</div>
                 <div
+                
                  className='location-and-hours'
                 >
                     <div className='map-container'>
